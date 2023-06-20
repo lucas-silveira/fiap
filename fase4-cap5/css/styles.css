@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+:root {
+  --primary-color-rgb: 30,41,59;
+  --primary-color: rgb(30, 41, 59);
+  --secondary-color-rgb: 133,153,182;
+  --secondary-color: rgb(133, 153, 182);
+  --bs-body-bg: rgb(212, 212, 216);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-bg: rgba(var(--primary-color-rgb), 0.9);
+  --bs-btn-hover-border-color: rgba(var(--primary-color-rgb), 0.9);
+  --bs-btn-active-bg: rgba(var(--primary-color-rgb), 0.9);
+  --bs-btn-active-border-color: rgba(var(--primary-color-rgb), 0.9);
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.wrapper-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-login {
+  width: 360px;
+  background-color: #FFF;
+}
+
+.img-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+@media (max-width: 575.98px) {
+  .wrapper-login {
+    justify-content: center;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+  }
+
+  .box-login {
+    width: 100%;
+  }
+}
